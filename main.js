@@ -7,7 +7,6 @@ async function apiRequest(){
     const data = await response.json()
     console.log(data)
 
-    document.getElementById('idNumber').innerText = data.id
     document.getElementById('villainName').innerText = data.name
     document.getElementById('villainMovie').innerText = data.movie
     document.getElementById('villainHome').innerText = data.home

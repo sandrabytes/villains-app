@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Villains app</h1>
-    <input type="text" />
-    <button>Click to get info</button>
-    <div class="pics-right">
+    <h1 data-position="header">Villains app</h1>
+    <section data-position="get-info">
+      <input type="text" />
+      <button>Click to get info</button>
+    </section>
+    <section data-position="image">
       <img
         src=""
         alt="villain-image"
@@ -19,13 +34,14 @@
         srcset=""
       />
       <p class="caption" id="villainCaption">Photo</p>
-    </div>
-    <ul class="villains-list">
-      <li><span>Id:</span><span id="idNumber"></span></li>
-      <li><span>Name:</span><span id="villainName"></span></li>
-      <li><span>Movie:</span><span id="villainMovie"></span></li>
-      <li><span>Home:</span><span id="villainHome"></span></li>
-    </ul>
+    </section>
+    <section data-position="quotes">
+      <ul class="villains-list">
+        <li><span>Name:</span> <span id="villainName"></span></li>
+        <li><span>Movie:</span> <span id="villainMovie"></span></li>
+        <li><span>Home:</span> <span id="villainHome"></span></li>
+      </ul>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
