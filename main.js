@@ -3,7 +3,9 @@ document.querySelector('button').addEventListener('click', apiRequest);
 async function apiRequest() {
   const villainName = document.querySelector('input').value;
   try {
-    const response = await fetch(`villains-api-production.up.railway.app`);
+    const response = await fetch(
+      `https://villains-api-production.up.railway.app/api/villains/${villainName}`
+    );
     const data = await response.json();
     console.log(data);
 

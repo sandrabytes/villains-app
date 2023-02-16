@@ -6,7 +6,7 @@ body {
 html {
   font-size: 220%;
   line-height: 1.4;
-  font-family:'Six Caps', sans-serif;
+  font-family: 'Six Caps', sans-serif;
   color: white;
 }
 
@@ -42,7 +42,6 @@ body {
   grid-area: image;
 }
 
-
 [data-position='quotes'] {
   background-color: rgba(212, 247, 108, 0.5);
   grid-area: quotes;
@@ -50,7 +49,7 @@ body {
 }
 
 [data-position] {
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   padding: 1rem;
   box-shadow: 0 0 5px 0 rgba(146, 12, 183, 0.5);
 }
@@ -60,6 +59,6 @@ h2 {
   margin: 0;
 }
 
-#villainImage{
+#villainImage {
   height: 70%;
 }
